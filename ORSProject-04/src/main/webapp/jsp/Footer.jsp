@@ -2,7 +2,7 @@
 <head>
 <style type="text/css">
 div.sticky {
-	position: -webkit-sticky;
+	position: fixed;
 	position: sticky;
 	width: 100%;
 	text-align: center;

@@ -26,7 +26,7 @@ import in.co.rays.proj4.util.ServletUtility;
  * Supported operations include Save (add), Update, Cancel and Reset.
  * </p>
  * 
- * @author Chaitanya Bhatt
+ *Uday Dabi
  * @version 1.0
  * @see in.co.rays.proj4.model.RoleModel
  * @see in.co.rays.proj4.bean.RoleBean

@@ -21,7 +21,7 @@ import in.co.rays.proj4.util.ServletUtility;
  * This class also defines standard operation constants used throughout the
  * application (Save, Update, Delete, List, Search, etc.).
  * 
- * author Chaitanya Bhatt
+ * Uday Dabi
  * 
  * @version 1.0
  */
@@ -136,17 +136,21 @@ public abstract class BaseCtl extends HttpServlet {
 		preload(request);
 
 		String op = DataUtility.getString(request.getParameter("operation"));
+		System.out.println(op);
 
 		if (DataValidator.isNotNull(op) && !OP_CANCEL.equalsIgnoreCase(op) && !OP_VIEW.equalsIgnoreCase(op)
 				&& !OP_DELETE.equalsIgnoreCase(op) && !OP_RESET.equalsIgnoreCase(op)) {
 
+			System.out.println(op);
 			if (!validate(request)) {
+				System.out.println(op);
 				BaseBean bean = (BaseBean) populateBean(request);
 				ServletUtility.setBean(bean, request);
 				ServletUtility.forward(getView(), request, response);
 				return;
 			}
 		}
+		System.out.println(op);
 		super.service(request, response);
 		System.out.println("server name: =====> " + request.getServerName());
 		System.out.println("submit operation hai ya nahi ==== " + response.encodeUrl(op));

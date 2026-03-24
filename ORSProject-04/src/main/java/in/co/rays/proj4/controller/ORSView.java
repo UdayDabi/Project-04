@@ -12,7 +12,7 @@ package in.co.rays.proj4.controller;
  * patterns used by servlets.
  * </p>
  *
- * @author Chaitanya Bhatt
+ *Uday Dabi
  * @version 1.0
  */
 public interface ORSView {
@@ -79,6 +79,13 @@ public interface ORSView {
 
 	public String COURSE_VIEW = PAGE_FOLDER + "/CourseView.jsp";
 	public String COURSE_CTL = APP_CONTEXT + "/ctl/CourseCtl";
+	
+	
+	public String AIRPORT_LIST_VIEW = PAGE_FOLDER + "/AirportListView.jsp";
+	public String AIRPORT_LIST_CTL = APP_CONTEXT + "/ctl/AirportListCtl";
+	
+	public String AIRPORT_VIEW = PAGE_FOLDER + "/AirportView.jsp";
+	public String AIRPORT_CTL = APP_CONTEXT + "/ctl/AirportCtl";
 
 	public String COURSE_LIST_VIEW = PAGE_FOLDER + "/CourseListView.jsp";
 	public String COURSE_LIST_CTL = APP_CONTEXT + "/ctl/CourseListCtl";

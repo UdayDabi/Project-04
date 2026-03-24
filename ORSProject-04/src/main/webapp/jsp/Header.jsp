@@ -19,7 +19,8 @@
 <script src="/ORSProject-04/js/datepicker.js"></script>
 </head>
 <body>
-	<img src="<%=ORSView.APP_CONTEXT%>/img/customLogo.jpg" align="right" width="100" height="40">
+	<img src="<%=ORSView.APP_CONTEXT%>/img/customLogo.jpg" align="right"
+		width="100" height="40">
 	<%
 		UserBean user = (UserBean) session.getAttribute("user");
 	%>
@@ -71,6 +72,10 @@
 	<a href=<%=ORSView.TIMETABLE_CTL%>><b>Add Timetable</b></a>
 	<b>|</b>
 	<a href=<%=ORSView.TIMETABLE_LIST_CTL%>><b>Timetable List</b></a>
+	<b>|</b>
+	<a href=<%=ORSView.AIRPORT_CTL%>><b>Add AirPort</b></a>
+	<b>|</b>
+	<a href=<%=ORSView.AIRPORT_LIST_CTL%>><b>AirPort List</b></a>
 	<b>|</b>
 	<a href=<%=ORSView.FACULTY_CTL%>><b>Add Faculty</b></a>
 	<b>|</b>

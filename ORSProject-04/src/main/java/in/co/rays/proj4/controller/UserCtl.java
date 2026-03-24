@@ -31,11 +31,15 @@ import in.co.rays.proj4.util.ServletUtility;
  * {@link RoleModel} to preload role data for dropdowns.
  * </p>
  *
- * @author Chaitanya Bhatt
+ *Uday Dabi
  * @version 1.0
  * @see in.co.rays.proj4.model.UserModel
  * @see in.co.rays.proj4.model.RoleModel
  * @see in.co.rays.proj4.bean.UserBean
+ */
+/**
+
+ *
  */
 @WebServlet(name = "UserCtl", urlPatterns = { "/ctl/UserCtl" })
 public class UserCtl extends BaseCtl {

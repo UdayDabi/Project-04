@@ -90,9 +90,8 @@
 							<span class="input-group-addon"> <span
 								class="glyphicon glyphicon-calendar"></span>
 							</span>
-							<div data-datepicker date-format="MM/dd/yyyy" date-typer="true"
-								date-max-limit="{{maxDate}}" date-min-limit="{{minDate1}}">
-								<input type="text" name="dob" placeholder="Select Date of Birth"
+							
+								<input type="date" name="dob" placeholder="Select Date of Birth"
 									readonly="readonly"
 									value="<%=DataUtility.getDateString(bean.getDob())%>">
 							</div>
